@@ -1,16 +1,19 @@
 .navbar-container{
+    position: fixed;
     width: 100%;
     height: 6rem;
     /* border: 1px red solid; */
     display: flex;
     justify-content: space-between;
-    background-color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.5);
     align-items: center;
     font-weight: bolder;
     font-family: 'roboto';
     box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    z-index: 5000;
     padding: 0.3rem 1rem;
-    position: relative;
+    
 }
 
 .logo-container{
@@ -51,7 +54,8 @@
 .nav-links a:hover{
     background-color: grey;
     color: whitesmoke;
-    transition: background-color 0.4s ease;
+    transform: scale(1.1);
+    transition: background-color 0.3s ease;
 }
 
  a{
@@ -80,11 +84,16 @@
         position: absolute;
         top: 5rem;
         right: 1rem;
+        /* background-color: wheat; */
         background: none;
-        backdrop-filter: blur(1rem);
-        border-radius: 10px;
+        backdrop-filter: blur(8px);
+        z-index: 1000;
         padding: 1rem;
       }
+
+      
+
+
     
   
       .nav-links.open {
