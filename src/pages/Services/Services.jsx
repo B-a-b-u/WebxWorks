@@ -1,9 +1,12 @@
 
-import React from 'react'
+import Navbar from '../../components/Navbar/Navbar'
 
 const Services = () => {
   return (
-    <div>Services</div>
+    <>
+            <Navbar/>
+            <p>services page</p>
+        </>
   )
 }
 
