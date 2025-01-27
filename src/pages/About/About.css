@@ -1,0 +1,36 @@
+.about-section{
+    padding-top: 6rem;
+    display: flex;
+    
+    background-color: #ace3f7;
+}
+
+.about-img{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 2rem;
+    font-size: x-large;
+}
+
+.about-img img{
+    min-height: 20rem;
+    min-width: auto;
+}
+
+.about-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    flex-wrap: wrap;
+    font-weight: 500;
+    font-size: large;
+
+}
+
+@media (max-width: 700px){
+    .about-section{
+        flex-direction: column;
+    }
+}
