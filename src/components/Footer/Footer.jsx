@@ -30,7 +30,11 @@ const Footer = () => {
                     <SocialIcon url="www.linkedin.com" />
                     <SocialIcon url="www.google.com" />
                 </div>
-
+            </div>
+            <div className="copyrights-section">
+                    <p className="copyrigths">
+                        © WebxWorks Private Limited 2025
+                    </p>
             </div>
         </>
     )
