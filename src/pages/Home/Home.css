@@ -5,7 +5,7 @@
 }
 
 .hero-section1 ,.hero-section2{
-    padding: 6rem 4rem;
+    padding: 6rem 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -73,11 +73,12 @@
     .hero-section2{
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .hero-section-content .slogan{
         font-weight: bold;
-        font-size: larger;
+        font-size: x-large;
     }
 
     .hero-section-content .sub-slogan{

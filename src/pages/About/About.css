@@ -1,36 +1,67 @@
 .about-section{
-    padding-top: 6rem;
-    display: flex;
-    
-    background-color: #ace3f7;
-}
-
-.about-img{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    margin: 2rem;
-    font-size: x-large;
+    width: 100%;
+
 }
 
-.about-img img{
-    min-height: 20rem;
-    min-width: auto;
+.about-section1, .about-section2{
+    display: flex;
+    justify-content: center;
+    padding: 6rem 2rem;
+    align-items: center;
+    /* border: 1px red solid; */
+    column-gap: 5rem;
+    background-color: #ace3f7;
+    height: 100vh;
+}
+
+.about-section2{
+    background-color: whitesmoke;
 }
 
 .about-content{
+    /* border: 1px red solid; */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
+    flex-direction: column;
     flex-wrap: wrap;
-    font-weight: 500;
-    font-size: large;
+    font-size: xx-large;
+}
+
+.about-heading{
+    font-family: "Merriweather";
+    font-weight: bolder;
+    /* font-size: xx-large; */
+    min-height: auto;
+    text-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
 
-@media (max-width: 700px){
-    .about-section{
+.about-subcontent{
+    font-family: 'montserrat';
+    font-size: medium;
+    font-weight: 500;
+}
+
+.about-img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+@media (max-width: 700px) {
+    .about-section1, .about-section2{
         flex-direction: column;
+    }
+
+    .about-heading{
+        font-weight: bold;
+        font-size: x-large;
+    }
+
+    .about-subcontent{
+        font-weight: 400;
+        font-size: 100;
     }
 }
