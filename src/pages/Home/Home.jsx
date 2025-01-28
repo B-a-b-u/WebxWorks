@@ -1,6 +1,7 @@
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
-import HSImg from "../../assets/herosection.png"
+import home from "../../assets/home.png"
+import home3 from "../../assets/home3.png";
 import './Home.css'
 
 const Home = () => {
@@ -8,18 +9,36 @@ const Home = () => {
         <>
            <Navbar/>
            <div className="hero-section">
+           <div className="hero-section1">
                 <div className="hero-section-content">
                     <h1 className="slogan">
                         Building tomorrow's solution today itself!
                     </h1>
                     <p className="sub-slogan">
-                        A team of young passionate tech enthusiats
+                    At WebxWorks, we transform your ideas into innovative web experiences. From stunning websites to robust applications, we build solutions that redefine possibilities. Our team combines creativity, technology, and strategy to deliver exceptional results tailored to your unique needs. Whether you're a startup aiming to make an impact or an established brand seeking a digital edge, we craft scalable and user-centric solutions.
                     </p>
                     
                 </div>
-                <div className="hero-image">
-                        <img src={HSImg} />
-                    </div>
+                <div className="hero-image-container">
+                        <img className="hero-image" src={home} />
+
+                </div>
+            </div>
+            <div className="hero-section2">
+            <div className="hero-section-content">
+                    <h1 className="slogan">
+                        Why Choose us?
+                    </h1>
+                    <p className="sub-slogan">
+                    At WebXWorks, we transform your ideas into innovative web experiences. From stunning websites to robust applications, we build solutions that redefine possibilities.
+                    </p>
+                </div>
+                <div className="hero-image-container">
+                <img className="hero-image" src={home3} />
+                </div>
+                
+            </div>
+
            </div>
            <Footer/>
         </>

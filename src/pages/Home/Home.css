@@ -1,24 +1,89 @@
 .hero-section{
-    padding-top: 6rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.hero-section1 ,.hero-section2{
+    padding: 6rem 4rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #ace3f7;
-    min-height: auto;
+    min-height: 100vh;
+    column-gap: 5em;
+    box-sizing: border-box;
+}
+
+.hero-section2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px red solid; */
+    background-color: whitesmoke;
 }
 
 .hero-section-content{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    margin: 2rem;
-    font-weight: bolder;
+    /* margin: 2rem; */
+    /* width: 100em; */
+    /* font-weight: bolder; */
     font-size: xx-large;
+    /* border: 1px red solid; */
 }
+
+.hero-section-content .slogan{
+    font-family: "Merriweather";
+    font-weight: bolder;
+    /* font-size: xx-large; */
+    min-height: auto;
+    text-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.hero-section-content .sub-slogan{
+    font-family: 'montserrat';
+    font-size: medium;
+    font-weight: 500;
+}
+
+.hero-image{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* border: 1px red solid; */
+}
+
+
 
 @media (max-width:700px){
     .hero-section{
         display: flex;
         flex-direction: column;
     }
+
+    .hero-section1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .hero-section2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-section-content .slogan{
+        font-weight: bold;
+        font-size: larger;
+    }
+
+    .hero-section-content .sub-slogan{
+        font-weight: 400;
+        font-size: 100;
+    }
+    
+    
 }
