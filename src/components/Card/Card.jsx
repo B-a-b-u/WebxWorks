@@ -2,7 +2,7 @@ import "./Card.css"
 import reactlogo from "../../assets/react.svg"
 import { useState } from "react";
 
-const Card = () =>{
+const Card = ({image, service, description}) =>{
 
     const [isFlipped, setIsFlipped] = useState(false);
 
@@ -14,11 +14,11 @@ const Card = () =>{
         <div className={`card-container ${isFlipped? "flipped" : ""}`} onClick={handleFlip}>
             <div className="card-inner-content">
                 <div className="flip-card-front">
-                    <img src={reactlogo} alt="" />
+                    <h3 className="card-heading">{service}</h3> 
+                    <img src={image} alt="" />
                 </div>
                 <div className="flip-card-back">
-                    <h3 className="card-heading">Web Dev</h3> 
-                    <p className="card-content">This si scomes adsfsasdf adsfa adsfads conetnte</p> 
+                    <p className="card-content">{description}</p> 
                 </div>
             </div>
         </div>

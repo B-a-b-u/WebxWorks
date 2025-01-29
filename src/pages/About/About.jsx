@@ -6,6 +6,8 @@ import About2 from "../../assets/about3.png";
 import "./About.css";
 
 const About = () => {
+
+
     return (
         <>
             <Navbar />

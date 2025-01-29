@@ -5,23 +5,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    background-color: #d6f1fb;
+    
 }
 
 .services-cards-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 1rem;
-    gap: 3rem;
+    gap: 5rem;
     flex-wrap: wrap;
     margin: 1rem 6rem;
+    
 }
 
 .card-container{
     position: relative;
     display: flex;
-    width: 15rem;
-    height: 18rem;
+    width: 20rem;
+    height: 25rem;
     margin: auto;
     perspective: 1000px;
     cursor: pointer;
@@ -54,20 +56,30 @@
 }
 
 .flip-card-front{
-    background-color: aqua;
+    background-color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 0rem;
+    box-sizing: border-box;
+    padding: 1rem;
 }
 
 .flip-card-back{
-    background-color: blanchedalmond;
+    background-color: whitesmoke;
     transform: rotateY(180deg);
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.flip-card-back .card-content{
+    font-family: 'montserrat';
+    font-size: medium;
+    font-weight: 500;
 }
 
 
@@ -75,15 +87,28 @@
 .card-heading{
     /* border: 1px black solid; */
     font-size: 1.4rem;
-    color: orangered;
+    color: #205866;
+    font-weight: bold;
+    font-family: 'Merriweather';
 }
 .card-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    color: blue;
+    color: #204848;
     padding : 2rem;
+}
+
+.services-heading-container{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.services-heading{
+    font-weight: bolder;
+    /* font-size: xx-large; */
+    font-family: "Merriweather";
 }
 
 @media screen and (max-width: 1024px) {
@@ -96,8 +121,8 @@
         font-size: 1rem;
     }
 
-    .card-content{
-        font-size: 0.9rem;
+    .flip-card-back .card-content{
+        font-size: small;
     }
 }
 
@@ -117,7 +142,7 @@
         font-size: 0.9rem;
     }
 
-    .card-content{
-        font-size: 0.8rem;
+    .flip-card-back .card-content{
+        font-size:xx-small;
     }
 }
