@@ -52,8 +52,8 @@
 }
 
 .nav-links a:hover{
-    background-color: grey;
-    color: whitesmoke;
+    background-color: #d6f1fb;
+    color: black;
     transform: scale(1.1);
     transition: background-color 0.3s ease;
 }

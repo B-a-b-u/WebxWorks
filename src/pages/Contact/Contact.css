@@ -1,12 +1,17 @@
 .contact-section{
     padding: 6rem 2rem;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
     /* border: 1px red solid; */
     gap: 2rem;
     box-sizing: border-box;
+    background-color: #d6f1fb;
+    font-family: "Merriweather";
+    font-size: xx-large;
+
 }
 
 .contact-content{
@@ -17,12 +22,60 @@
     align-items: center;
     width: 50%;
     height: 100%;
+    font-size: xx-large;
     /* border: 1px red solid; */
 }
 
-.reachout{
- line-height: 1rem;
+.contact-headings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* line-height: 0.1rem; */
+    flex-wrap: wrap;
+}
+
+
+.contact-section1 .contact-headings .section-heading{
+    font-size: x-large;
+    font-weight: bold;
+    color: #205866;
+    flex-wrap: wrap;
+    
+}
+
+ .contact-headings p{
+    font-family: 'montserrat';
+    font-size: medium;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contact-headings .contact-heading{
+    color: #205866;
+    /* font-size: xx-large; */
+    font-weight: bolder;
+}
+
+.contact-subsection{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.reachout .section-heading{
+    color: #204848;
+    text-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
  /* border: 1px red solid; */
+}
+
+
+
+.contact-form-container{
+    font-size: xx-large;
+
 }
 
 .contact-form{
@@ -37,9 +90,10 @@
     margin: auto;
 }
 
-#email, #msg-box{
+#email, #message{
     width: 100%;
-    max-width: 40rem;
+    max-width: 100%;
+    padding: 0.4rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -49,7 +103,7 @@
     height: 3em;
 }
 
-#msg-box{
+#message{
     border-radius: 10px;
     width: 20rem;
     height: 10em;
@@ -61,7 +115,8 @@
     width: auto;
     border: none;
     cursor: pointer;
-    background-color: aqua;
+    color: white;
+    background-color: #205866;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -87,6 +142,10 @@ input, textarea {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
+    }
+    .contact-subsection {
+        flex-direction: column;
+        gap: 2rem;
     }
 
     .contact-content, .contact-form{
