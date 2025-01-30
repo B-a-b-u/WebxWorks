@@ -34,6 +34,7 @@
     margin-left: 1rem;
     font-size: x-large;
     font-weight: bolder;
+    color: #205866;
 }
 
 .nav-links{
@@ -48,12 +49,13 @@
     /* border: 1px black solid; */
     padding: 0.5rem 1rem;
     border-radius: 20px;
+    color: #205866;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links a:hover{
     background-color: #d6f1fb;
-    color: black;
+    color: #007fb1;
     transform: scale(1.1);
     transition: background-color 0.3s ease;
 }
