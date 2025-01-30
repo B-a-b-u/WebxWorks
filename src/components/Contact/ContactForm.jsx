@@ -1,34 +1,46 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import { NavLink } from 'react-router-dom';
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("mjkgwqea");
   if (state.succeeded) {
-      return <p>Form Submitted!</p>;
+    return (
+      <>
+        <div className="form-submitted">
+          <p>Form Submitted!</p>
+          <NavLink to="/" ><button className="home-btn">Go home</button></NavLink>
+
+        </div>
+      </>
+    )
   }
   return (
     <form className='contact-form' onSubmit={handleSubmit}>
-      <label htmlFor="email">
-        Email Address
+      <label htmlFor="email" className="section-heading">
+        Enter Email
       </label>
       <input
         id="email"
-        type="email" 
+        type="email"
         name="email"
         placeholder='youremail@gmail.com'
+        required
       />
-      <ValidationError 
-        prefix="Email" 
+      <ValidationError
+        prefix="Email"
         field="email"
         errors={state.errors}
       />
+
       <textarea
         id="message"
         name="message"
         placeholder='Start Writing here...'
+        required
       />
-      <ValidationError 
-        prefix="Message" 
+      <ValidationError
+        prefix="Message"
         field="message"
         errors={state.errors}
       />

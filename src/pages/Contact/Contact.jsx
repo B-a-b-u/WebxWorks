@@ -30,8 +30,7 @@ const Contact = () => {
 
                     </div>
                     <div className="contact-section2">
-
-                        <ContactForm/>
+                        <ContactForm />
                     </div>
                 </div>
             </div>
