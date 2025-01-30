@@ -6,8 +6,8 @@ import Card from '../../components/Card/Card';
 import  webdev  from "../../assets/services/webdev.svg"
 import  appdev  from "../../assets/services/appdev.svg"
 import  gamedev  from "../../assets/services/game2dev.svg"
-import  uiux  from "../../assets/services/cybersecurity.svg"
-import  cs  from "../../assets/services/UIUX.svg"
+import  cs  from "../../assets/services/cybersecurity.svg"
+import  uiux  from "../../assets/services/UIUX.svg"
 import  ml  from "../../assets/services/aiml.svg"
 
 

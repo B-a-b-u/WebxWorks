@@ -1,9 +1,18 @@
 import "./NotFound.css"
+import image from "../../assets/404.svg"
+import { NavLink } from "react-router-dom";
+import Navbar from "../../components/Navbar/Navbar";
+
 
 const NotFound = () => {
     return(
         <>
-            <h1>page not found</h1>
+            <Navbar/>
+            <div className="notfound-section">
+                <img className="notfound-img" src={image} alt="" />
+                <NavLink to="/" ><button className="home-btn">Go home</button></NavLink>
+            
+            </div>
         </>
     )
 }
