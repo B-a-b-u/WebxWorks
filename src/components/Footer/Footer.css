@@ -12,6 +12,22 @@
     
 }
 
+.map {
+    width: 100%;
+    max-width: 600px; /* Prevents the map from getting too large */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.googemap {
+    width: 100%;
+    height: 300px; /* Default height */
+    border: 0;
+    border-radius: 8px;
+}
+
 .footer-container div{
     display: flex;
     flex-direction: column;
@@ -43,6 +59,10 @@
     justify-content: center;
     align-items: center;
     padding: 1rem 1rem;
+}
+
+.reactout .email-text{
+    font-size: large;
 }
 
 .company-links{

@@ -82,13 +82,36 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 5rem;
-        right: 1rem;
+        justify-content: center;
+        align-items: center;
+        top: 6rem;
+        right: 0rem;
+        width: 10rem;
+        gap: 0rem;
+        border-radius: 10px;
         /* background-color: wheat; */
-        background: none;
-        backdrop-filter: blur(8px);
+        background-color : #ebf8fd;
+
+        /* background-color: rgba(214, 241, 251, 0.9); */
+        /* backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%); */
         z-index: 1000;
         padding: 1rem;
+      }
+
+      .nav-links a{
+        /* border: 1px red solid; */
+       width: 100%;
+       border-radius: 0;
+        box-shadow: none;
+        /* background-color: #d6f1fb; */
+      }
+
+      .nav-links a:hover{
+        background-color: #d6f1fb;
+        color: black;
+        transform: scaleY(1.1);
+        transition: background-color 0.3s ease;
       }
 
       .nav-links.open {
