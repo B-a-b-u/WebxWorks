@@ -113,23 +113,28 @@
 
 @media screen and (max-width: 1024px) {
     .card-container{
-        width: 13rem;
-        height: 16rem;
+        width: 16rem;
+        height: 19rem;
+        border: 1px red solid;
     }
+
+
 
     .card-heading{
         font-size: 1rem;
     }
 
     .flip-card-back .card-content{
+        font-weight: 600;
         font-size: small;
+        box-shadow: none;
     }
 }
 
 @media screen and (max-width: 700px) {
     .card-container{
-        width: 10rem;
-        height: 13rem;
+        width: 13rem;
+        height: 16rem;
     }
     .card-container:hover .card-inner-content{
         transform: rotateY(0deg);
@@ -143,6 +148,6 @@
     }
 
     .flip-card-back .card-content{
-        font-size:xx-small;
+        font-size:small;
     }
 }
