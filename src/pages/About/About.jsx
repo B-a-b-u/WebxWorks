@@ -1,16 +1,10 @@
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
 import AboutImg from "../../assets/about.png";
 import About2 from "../../assets/about3.png";
-
 import "./About.css";
 
 const About = () => {
-
-
     return (
         <>
-            <Navbar />
             <div className="about-section">
             <div className="about-section1">
                 <div className="about-content">
@@ -39,7 +33,6 @@ const About = () => {
                 </div>
             </div>
             </div>
-            <Footer />
         </>
     )
 }

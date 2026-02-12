@@ -1,5 +1,3 @@
-import Footer from "../../components/Footer/Footer";
-import Navbar from "../../components/Navbar/Navbar";
 import home from "../../assets/home.png"
 import home3 from "../../assets/home3.png";
 import './Home.css'
@@ -7,7 +5,6 @@ import './Home.css'
 const Home = () => {
     return (
         <>
-            <Navbar />
             <div className="hero-section">
                 <div className="hero-section1">
                     <div className="hero-section-content">
@@ -40,7 +37,6 @@ const Home = () => {
                 </div>
 
             </div>
-            <Footer />
         </>
     )
 }

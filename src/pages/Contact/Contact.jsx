@@ -1,6 +1,3 @@
-import React from 'react'
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from "../../components/Footer/Footer";
 import './Contact.css';
 import { SocialIcon } from 'react-social-icons';
 import ContactForm from '../../components/Contact/ContactForm';
@@ -8,7 +5,6 @@ import ContactForm from '../../components/Contact/ContactForm';
 const Contact = () => {
     return (
         <>
-            <Navbar />
             <div className="contact-section">
                 <div className="contact-headings">
                     <h1 className="contact-heading">Reach out to us</h1>
@@ -34,7 +30,6 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }

@@ -1,6 +1,3 @@
-
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from "../../components/Footer/Footer";
 import './Services.css';
 import Card from '../../components/Card/Card';
 import  webdev  from "../../assets/services/webdev.svg"
@@ -49,7 +46,6 @@ const Services = () => {
 
   return (
     <>
-      <Navbar />
       <div className="services-section">
         <div className="services-heading-container">
           <h1 className="services-heading">
@@ -65,7 +61,6 @@ const Services = () => {
           }
         </div>
       </div>
-      <Footer />
     </>
   )
 }
